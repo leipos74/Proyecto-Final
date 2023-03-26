@@ -6,6 +6,10 @@ TagManager:
   tags:
   - mecha
   - Enemy
+  - Sala0
+  - Sala1
+  - Sala2
+  - Sala3
   layers:
   - Default
   - TransparentFX
