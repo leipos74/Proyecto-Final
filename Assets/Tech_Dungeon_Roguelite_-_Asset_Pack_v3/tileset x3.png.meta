@@ -3014,34 +3014,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tileset x3_140
-      rect:
-        serializedVersion: 2
-        x: 1440
-        y: 1632
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b11adeebb19ef94aba2c4046f001000
-      internalID: 226963154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: tileset x3_141
       rect:
         serializedVersion: 2
         x: 1536
-        y: 1632
+        y: 1691
         width: 96
-        height: 96
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
