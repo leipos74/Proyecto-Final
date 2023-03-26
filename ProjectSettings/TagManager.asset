@@ -71,3 +71,6 @@ TagManager:
   - name: Paredes lat
     uniqueID: 3417725943
     locked: 0
+  - name: casa
+    uniqueID: 1984992423
+    locked: 0
