@@ -12,13 +12,6 @@ public class pauseMenu : MonoBehaviour
     public Follow CamMecha;
     public Weapon WeaponController;
     public bool isPaused;
-<<<<<<< HEAD
-    
-=======
-
->>>>>>> b2b5eaae9594bfcce3fd831744a742e48b31aedb
-
-
     private void Awake()
     {
         instance = this;
@@ -32,11 +25,11 @@ public class pauseMenu : MonoBehaviour
         OptionsMenu.SetActive(false);
         if (CamPlayer != null)
         {
-<<<<<<< HEAD
+
             CamPlayer.enabled = true; 
-=======
+
             CamPlayer.enabled = true;
->>>>>>> b2b5eaae9594bfcce3fd831744a742e48b31aedb
+
         }
         if (CamMecha != null)
         {
@@ -92,15 +85,15 @@ public class pauseMenu : MonoBehaviour
     {
         Time.timeScale = 1.0f;
         isPaused = false;
-<<<<<<< HEAD
+
         PauseMenu.SetActive(false); 
 
         if(SwapCharacter.Instance.playerActive)
-=======
+
         PauseMenu.SetActive(false);
 
         if (SwapCharacter.Instance.playerActive)
->>>>>>> b2b5eaae9594bfcce3fd831744a742e48b31aedb
+
         {
             CamPlayer.enabled = true;
             CamMecha.enabled = false;
@@ -124,9 +117,5 @@ public class pauseMenu : MonoBehaviour
             WeaponController.enabled = true;
         }
     }
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> b2b5eaae9594bfcce3fd831744a742e48b31aedb
 }
