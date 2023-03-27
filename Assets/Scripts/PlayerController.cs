@@ -105,8 +105,8 @@ public class PlayerController : MonoBehaviour
             if (input.x != 0 || input.y != 0)
 
             {
-                transform.position += new Vector3(speed * input.x * Time.fixedDeltaTime, speed * input.y * Time.fixedDeltaTime);
-            }
+              rb.AddForce(new Vector3(speed * input.x * Time.fixedDeltaTime, speed * input.y * Time.fixedDeltaTime));
+                    }
             if (input.x != 0 || input.y != 0)
             {
                 isMoving = true;
@@ -144,7 +144,7 @@ public class PlayerController : MonoBehaviour
 
             if (input.x != 0 || input.y != 0)
             {
-                transform.position += new Vector3(speed * input.x * Time.fixedDeltaTime, speed * input.y * Time.fixedDeltaTime);
+                rb.AddForce(new Vector3(speed * input.x * Time.fixedDeltaTime, speed * input.y * Time.fixedDeltaTime)) ;
             }
             if (input.x != 0 || input.y != 0)
             {
@@ -200,7 +200,7 @@ public class PlayerController : MonoBehaviour
 
             if (input.x != 0 || input.y != 0)
             {
-                transform.position += new Vector3(speed * input.x * Time.fixedDeltaTime, speed * input.y * Time.fixedDeltaTime);
+                rb.AddForce(new Vector3(speed * input.x * Time.fixedDeltaTime, speed * input.y * Time.fixedDeltaTime));
             }
             if (input.x != 0 || input.y != 0)
             {
