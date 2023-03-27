@@ -11,11 +11,8 @@ public class pauseMenu : MonoBehaviour
     public CamExtend CamPlayer;
     public Follow CamMecha;
     public Weapon WeaponController;
-    public bool isPaused
-    {
-        get;
-        private set;
-    }
+    public bool isPaused;
+    
 
 
     private void Awake()
@@ -29,11 +26,14 @@ public class pauseMenu : MonoBehaviour
         isPaused = false;
         PauseMenu.SetActive(false);
         OptionsMenu.SetActive(false);
-        CamPlayer.enabled = true;
-        CamMecha.enabled = false;
-
-
-
+        if (CamPlayer != null)
+        {
+            CamPlayer.enabled = true; 
+        }
+        if (CamMecha != null)
+        {
+            CamMecha.enabled = false;
+        }
     }
 
     // Update is called once per frame
@@ -46,6 +46,8 @@ public class pauseMenu : MonoBehaviour
                 Time.timeScale = 1.0f;
                 isPaused = false;
                 PauseMenu.SetActive(false);
+                OptionsMenu.SetActive(false);
+                WeaponController.enabled = true;
 
             }
             else
@@ -53,8 +55,16 @@ public class pauseMenu : MonoBehaviour
                 Time.timeScale = 0.0f;
                 isPaused = true;
                 PauseMenu.SetActive(true);
-                CamPlayer.enabled = false;
-                CamMecha.enabled = false;
+                if (CamPlayer != null)
+                {
+                    CamPlayer.enabled = false;
+
+                }
+
+                if (CamMecha != null)
+                {
+                    CamMecha.enabled = false;
+                }
                 WeaponController.enabled = false;
             }
 
@@ -66,33 +76,39 @@ public class pauseMenu : MonoBehaviour
     {
         OptionsMenu.SetActive(true);
         PauseMenu.SetActive(false);
-        Time.timeScale = 1.0f;
+        Time.timeScale = 0.0f;
     }
 
 
     public void Resume()
     {
-        Time.timeScale = 1;
+        Time.timeScale = 1.0f;
         isPaused = false;
         PauseMenu.SetActive(false); 
+
         if(SwapCharacter.Instance.playerActive)
         {
-
             CamPlayer.enabled = true;
             CamMecha.enabled = false;
             WeaponController.enabled = true;
         }
+        else if (!SwapCharacter.Instance.playerActive)
+        {
+            if (CamPlayer != null)
+            {
+                CamPlayer.enabled = false;
+            }
+            if (CamMecha != null)
+            {
+                CamMecha.enabled = true;
+            }
+            WeaponController.enabled = false;
+            Debug.Log("player inactivo");
+        }
         else
         {
-            CamPlayer.enabled = false;
-            CamMecha.enabled = true;
-            WeaponController.enabled = false;
+            WeaponController.enabled = true;
         }
-        
-
-
-
     }
-
-
+    
 }

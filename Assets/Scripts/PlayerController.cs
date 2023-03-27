@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
+        
         coll = GetComponent<Collider2D>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -61,67 +62,107 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!pauseMenu.instance.isPaused) { 
+        if (pauseMenu.instance != null && !pauseMenu.instance.isPaused != null) 
+        { 
             if (isMoving == true)
-        {
-            anim.SetBool("Run", true);
+            {
+                anim.SetBool("Run", true);
+            }
+            if (isMoving == false)
+            {
+                anim.SetBool("Run", false);
+            }
+
         }
-        if (isMoving == false)
+        else if (!PauseMenuAbajo.Instance.Paused)
         {
-            anim.SetBool("Run", false);
-        }
-
-
-        if (Input.GetKeyDown(KeyCode.F) && canDash)
-        {
-
-     
-
-            Debug.Log("DASHED");
-
+            if (isMoving == true)
+            {
+                anim.SetBool("Run", true);
+            }
+            if (isMoving == false)
+            {
+                anim.SetBool("Run", false);
+            }
         }
     }
- }
 
     private void FixedUpdate()
     {
-        if (!pauseMenu.instance.isPaused) { 
+        if (pauseMenu.instance != null && !pauseMenu.instance.isPaused != null) 
+        { 
+
             input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-        if (input.x != 0 || input.y !=0)
-        {
-            transform.position += new Vector3(speed * input.x * Time.fixedDeltaTime, speed * input.y * Time.fixedDeltaTime);
-        }
-        if (input.x != 0 || input.y != 0)
-        {
-            isMoving = true;
-        }
-        else
-        {
-            isMoving = false;
-        }
+
+            if (input.x != 0 || input.y !=0)
+            {
+                transform.position += new Vector3(speed * input.x * Time.fixedDeltaTime, speed * input.y * Time.fixedDeltaTime);
+            }
+            if (input.x != 0 || input.y != 0)
+            {
+                isMoving = true;
+            }
+            else
+            {
+                isMoving = false;
+            }
 
 
-        isMoving = input.magnitude > 0;
+            isMoving = input.magnitude > 0;
 
 
-        // Determinar la posición del mouse en relación con la pantalla
+            // Determinar la posición del mouse en relación con la pantalla
        
 
-        // Girar el personaje hacia la izquierda o hacia la derecha según la posición del mouse
-        if (GameManager.Instance.isMouseOnLeft)
-        {
-            transform.rotation = Quaternion.Euler(0f, 180f, 0f);
-        }
-        else
-        {
-            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
-        }
+            // Girar el personaje hacia la izquierda o hacia la derecha según la posición del mouse
+            if (GameManager.Instance.isMouseOnLeft)
+            {
+                transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            }
          
         
-    }
+        }
+        else if (!PauseMenuAbajo.Instance.Paused)
+        {
+            input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+
+            if (input.x != 0 || input.y != 0)
+            {
+                transform.position += new Vector3(speed * input.x * Time.fixedDeltaTime, speed * input.y * Time.fixedDeltaTime);
+            }
+            if (input.x != 0 || input.y != 0)
+            {
+                isMoving = true;
+            }
+            else
+            {
+                isMoving = false;
+            }
+
+
+            isMoving = input.magnitude > 0;
+
+
+            // Determinar la posición del mouse en relación con la pantalla
+
+
+            // Girar el personaje hacia la izquierda o hacia la derecha según la posición del mouse
+            if (GameManager.Instance.isMouseOnLeft)
+            {
+                transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            }
+        }
 
    
- }
+    }
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "mecha")
