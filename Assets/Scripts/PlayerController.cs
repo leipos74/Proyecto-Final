@@ -89,12 +89,21 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+<<<<<<< HEAD
         if (pauseMenu.instance != null && !pauseMenu.instance.isPaused != null) 
         { 
 
             input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
             if (input.x != 0 || input.y !=0)
+=======
+        if (pauseMenu.instance != null && !pauseMenu.instance.isPaused != null)
+        {
+
+            input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+
+            if (input.x != 0 || input.y != 0)
+>>>>>>> b2b5eaae9594bfcce3fd831744a742e48b31aedb
             {
                 transform.position += new Vector3(speed * input.x * Time.fixedDeltaTime, speed * input.y * Time.fixedDeltaTime);
             }
@@ -106,6 +115,7 @@ public class PlayerController : MonoBehaviour
             {
                 isMoving = false;
             }
+<<<<<<< HEAD
 
 
             isMoving = input.magnitude > 0;
@@ -163,6 +173,93 @@ public class PlayerController : MonoBehaviour
 
    
     }
+=======
+
+
+            isMoving = input.magnitude > 0;
+
+
+            // Determinar la posición del mouse en relación con la pantalla
+
+
+            // Girar el personaje hacia la izquierda o hacia la derecha según la posición del mouse
+            if (GameManager.Instance.isMouseOnLeft)
+            {
+                transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            }
+
+
+        }
+        else if (!PauseMenuAbajo.Instance.Paused)
+        {
+            input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+
+            if (input.x != 0 || input.y != 0)
+            {
+                transform.position += new Vector3(speed * input.x * Time.fixedDeltaTime, speed * input.y * Time.fixedDeltaTime);
+            }
+            if (input.x != 0 || input.y != 0)
+            {
+                isMoving = true;
+            }
+            else
+            {
+                isMoving = false;
+            }
+
+
+            isMoving = input.magnitude > 0;
+
+
+            // Determinar la posición del mouse en relación con la pantalla
+
+
+            // Girar el personaje hacia la izquierda o hacia la derecha según la posición del mouse
+            if (GameManager.Instance.isMouseOnLeft)
+            {
+                transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+            }
+        }
+
+
+    }
+    public void TakeDamageEnemy()
+    {
+
+        GameManager.Instance.lifePlayer -= GameManager.Instance.damageEnemy;
+        Debug.Log("Has recibido damage");
+        anim.SetTrigger("Damaged");
+            
+        if (GameManager.Instance.lifePlayer <= 0)
+        {
+
+            Dead();
+
+        }
+        
+
+    }
+
+    private void Dead()
+    {
+
+        anim.SetBool("isDead", true);
+        rb.gravityScale = 0.0f;   
+        Destroy(player);
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
+
+    }
+
+>>>>>>> b2b5eaae9594bfcce3fd831744a742e48b31aedb
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "mecha")
