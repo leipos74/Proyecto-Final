@@ -13,6 +13,13 @@ public class GameManager : MonoBehaviour
     public bool isMouseOnLeft;
     public Vector3 mousePos;
 
+    [Header("Vidas")]
+    public int lifePlayer;
+    public int lifeEnemy;
+    public int damageEnemy;
+    public int damagePlayer;
+
+
     private void Awake()
     {
         if (Instance == null)
@@ -28,7 +35,10 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-
+        lifePlayer = 100;
+        lifeEnemy = 50;
+        damageEnemy = 10;
+        damagePlayer = 10;
     }
     void Update()
     {
@@ -40,4 +50,5 @@ public class GameManager : MonoBehaviour
         mousePos = GameManager.Instance.Cam.ScreenToWorldPoint(Input.mousePosition);
 
     }
+
 }

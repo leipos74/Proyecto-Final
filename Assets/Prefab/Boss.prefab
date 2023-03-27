@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6473975871989509483}
   - component: {fileID: 844514524286558873}
   - component: {fileID: -871628045304558364}
+  - component: {fileID: -7017322713337145194}
+  - component: {fileID: -2435181022795163712}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Enemy
@@ -27,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5687523962916581043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.062, y: 0.126, z: 0}
+  m_LocalPosition: {x: -1.953, y: 0.183, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 2.0658584}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -75,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: -1177141387
   m_SortingLayer: 4
   m_SortingOrder: 3
-  m_Sprite: {fileID: -757279604, guid: 2ba460f941eabb34b807f225652c7262, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.12941177, a: 1}
+  m_Sprite: {fileID: -997993820, guid: 60e005d8929aef14da73c2eafc2e38ce, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -96,21 +98,21 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000017881393, y: -0.10444194}
+  m_Offset: {x: -0.0064126253, y: -0.06596756}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.125, y: 1.5}
+    oldSize: {x: 2.25, y: 2.625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.144786, y: 1.3122376}
+  m_Size: {x: 2.2733672, y: 2.3895197}
   m_EdgeRadius: 0
 --- !u!114 &-871628045304558364
 MonoBehaviour:
@@ -124,6 +126,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 392275e000fb78a4fa68d11f1965308b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: -7017322713337145194}
   moveSpeed: 0.4
+  moving: 0
   player: {fileID: 2709836102652394032, guid: 37dea38e8e700b944a68c06d6ed165ae, type: 3}
   mecha: {fileID: 0}
+  maxhealthEnemy: 2147483647
+--- !u!95 &-7017322713337145194
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5687523962916581043}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6b67dc0ba8c8e04448a0f9580dc63308, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &-2435181022795163712
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5687523962916581043}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 1
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

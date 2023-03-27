@@ -11,8 +11,8 @@ public class Weapon : MonoBehaviour
     
     private void Update()
     {
-        
-        Vector3 difference = GameManager.Instance.mousePos - transform.position;
+
+     Vector3 difference = GameManager.Instance.mousePos  - transform.position;
 
         difference.Normalize();
 
