@@ -23,24 +23,24 @@ public class WaveSpawnner : MonoBehaviour
 
     private bool canSpawn = true;
     private bool canAnimate = false;
-    
+
 
     private void Update()
     {
         currentWave = waves[currentWaveNumber];
         SpawnWave();
         GameObject[] totalEnemies = GameObject.FindGameObjectsWithTag("Enemy");
-        if (totalEnemies.Length == 0  )
+        if (totalEnemies.Length == 0)
         {
-            if ( currentWaveNumber + 1 != waves.Length )
+            if (currentWaveNumber + 1 != waves.Length)
             {
-                if ( canAnimate)
+                if (canAnimate)
                 {
                     waveName.text = waves[currentWaveNumber + 1].waveName;
                     animator.SetTrigger("WaveComplete");
                     canAnimate = false;
                 }
-                
+
             }
             else
             {
@@ -49,7 +49,7 @@ public class WaveSpawnner : MonoBehaviour
 
 
         }
-        
+
     }
 
     void SpawnNextWave()
@@ -74,7 +74,7 @@ public class WaveSpawnner : MonoBehaviour
                 canAnimate = true;
             }
         }
-        
+
     }
 
 }

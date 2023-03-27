@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Weapon : MonoBehaviour
 {
     [SerializeField] Transform firePoint;
     [SerializeField] GameObject bullet;
     [SerializeField] float fireRate;
+    public float recoil;
 
     private float nextFireTime;
     public Rigidbody2D rb;
@@ -54,8 +56,8 @@ public class Weapon : MonoBehaviour
         if (Input.GetButton("Fire1") && nextFireTime < Time.time)
         {
             Debug.Log("Has disparado");
-            Instantiate(bullet, transform.position, transform.rotation);    
-          
+            Instantiate(bullet, transform.position, transform.rotation);
+            rb.AddForce(-transform.eulerAngles * recoil); 
             nextFireTime = fireRate + Time.time;
           
         }

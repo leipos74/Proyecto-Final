@@ -9444,7 +9444,7 @@ GameObject:
   m_Component:
   - component: {fileID: 510937437}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: Spawners
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -12483,7 +12483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1018872749}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: Spawners
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -13423,7 +13423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1287202926}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Spawners
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -14560,7 +14560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1437833885}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: Spawners
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -14653,7 +14653,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1463244427}
   m_Layer: 0
-  m_Name: GameObject (4)
+  m_Name: Spawners
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -15460,7 +15460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1964596898}
   m_Layer: 0
-  m_Name: GameObject (6)
+  m_Name: Spawners
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -16144,6 +16144,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3424943556086981674, guid: 37dea38e8e700b944a68c06d6ed165ae,
         type: 3}
+      propertyPath: recoil
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424943556086981674, guid: 37dea38e8e700b944a68c06d6ed165ae,
+        type: 3}
       propertyPath: fireRate
       value: 0
       objectReference: {fileID: 0}
@@ -16160,12 +16165,12 @@ PrefabInstance:
     - target: {fileID: 5429016829317269393, guid: 37dea38e8e700b944a68c06d6ed165ae,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.64
+      value: 3.55
       objectReference: {fileID: 0}
     - target: {fileID: 5429016829317269393, guid: 37dea38e8e700b944a68c06d6ed165ae,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7
+      value: -2.15
       objectReference: {fileID: 0}
     - target: {fileID: 5429016829317269393, guid: 37dea38e8e700b944a68c06d6ed165ae,
         type: 3}
@@ -16210,13 +16215,18 @@ PrefabInstance:
     - target: {fileID: 7585030080656412998, guid: 37dea38e8e700b944a68c06d6ed165ae,
         type: 3}
       propertyPath: speed
-      value: 100
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984032875214751475, guid: 37dea38e8e700b944a68c06d6ed165ae,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7984032875214751475, guid: 37dea38e8e700b944a68c06d6ed165ae,
         type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 6200000, guid: 11c26cebacc9b784483b6a4b8fda4fc6, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 7984032875214751475, guid: 37dea38e8e700b944a68c06d6ed165ae,
         type: 3}
       propertyPath: m_LinearDrag
