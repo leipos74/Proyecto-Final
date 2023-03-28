@@ -6,10 +6,9 @@ TagManager:
   tags:
   - mecha
   - Enemy
-  - Sala0
-  - Sala1
-  - Sala2
-  - Sala3
+  - Meele
+  - Range
+  - Key
   layers:
   - Default
   - TransparentFX
@@ -73,4 +72,7 @@ TagManager:
     locked: 0
   - name: casa
     uniqueID: 1984992423
+    locked: 0
+  - name: Item
+    uniqueID: 3564779125
     locked: 0

@@ -6,6 +6,7 @@ public class DoorController : MonoBehaviour
 {
     public GameObject camPos;
     public GameObject salida;
+    public Vector2 position;
     // Start is called before the first frame update
     void Start()
     {
