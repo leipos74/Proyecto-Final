@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -11,9 +10,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Sprite shootArriba;
     [SerializeField] Sprite shootHorizontal;
 
-    [Header("For Shooring")]
+    [Header("For Shooting")]
     [SerializeField] GameObject bullet;
     private Rigidbody2D rb;
+
 
     [Header("For Shooting Direction")]
     public Transform gun;
@@ -39,8 +39,10 @@ public class PlayerController : MonoBehaviour
     public bool canDash = true;
     public float candashTime = 1f;
 
-    
-    
+    public GameObject deadScreen;
+
+
+
     void Start()
     {
         
@@ -49,9 +51,8 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         tr = GetComponent<TrailRenderer>();
-       
-        baseGravity = rb.gravityScale;
 
+        deadScreen.SetActive(false);
     }
     private void Awake()
     {
@@ -62,6 +63,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.Instance.lifePlayer <= 0)
+        {
+
+            Dead();
+
+        }
         if (pauseMenu.instance != null && !pauseMenu.instance.isPaused != null) 
         { 
             if (isMoving == true)
@@ -231,29 +238,14 @@ public class PlayerController : MonoBehaviour
 
 
     }
-    public void TakeDamageEnemy()
-    {
-
-        GameManager.Instance.lifePlayer -= GameManager.Instance.damageEnemy;
-        Debug.Log("Has recibido damage");
-        anim.SetTrigger("Damaged");
-            
-        if (GameManager.Instance.lifePlayer <= 0)
-        {
-
-            Dead();
-
-        }
-        
-
-    }
 
     private void Dead()
     {
-
+        
         anim.SetBool("isDead", true);
-        rb.gravityScale = 0.0f;   
-        Destroy(player);
+        rb.gravityScale = 0.0f;
+        deadScreen.SetActive(true);
+        Destroy(GameManager.Instance.Player);
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
 

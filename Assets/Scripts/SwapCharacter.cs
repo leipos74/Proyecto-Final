@@ -10,8 +10,10 @@ public class SwapCharacter : MonoBehaviour
     public CamExtend CamPlayer;
     public Follow CamMecha;
 
+
     public bool playerActive = true;
     public bool isIn;
+    public GameObject pressE;
     public static SwapCharacter Instance;
 
    
@@ -22,15 +24,17 @@ public class SwapCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        pressE.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        isIn = true; 
+        isIn = true;
+        pressE.SetActive(true);
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         isIn = false;
+        pressE.SetActive(false);
     }
 
     // Update is called once per frame
@@ -38,6 +42,7 @@ public class SwapCharacter : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && isIn == true)
         {
+
             SwitchPlayer();
         }
     }
