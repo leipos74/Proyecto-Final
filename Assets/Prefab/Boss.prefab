@@ -101,7 +101,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0064126253, y: -0.06596756}
+  m_Offset: {x: -0.006412506, y: -0.013849139}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -112,7 +112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.2733672, y: 2.3895197}
+  m_Size: {x: 2.5165863, y: 2.7717211}
   m_EdgeRadius: 0
 --- !u!114 &-871628045304558364
 MonoBehaviour:
@@ -131,7 +131,8 @@ MonoBehaviour:
   moving: 0
   player: {fileID: 2709836102652394032, guid: 37dea38e8e700b944a68c06d6ed165ae, type: 3}
   mecha: {fileID: 0}
-  maxhealthEnemy: 2147483647
+  maxhealthEnemy: 100
+  collisionCooldown: 0.5
 --- !u!95 &-7017322713337145194
 Animator:
   serializedVersion: 4

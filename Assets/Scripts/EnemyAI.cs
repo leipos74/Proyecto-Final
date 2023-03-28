@@ -16,7 +16,8 @@ public class EnemyAI : MonoBehaviour
     public Transform mecha;
     public int maxhealthEnemy = 100;
     int currentHealth;
-    bool takeDamage;
+    private float lastCollisionTime = 0f;
+    public float collisionCooldown = 1f;
 
     private void Start()
     {
@@ -37,7 +38,7 @@ public class EnemyAI : MonoBehaviour
         Vector2 newPlayerPosition = player.position - transform.position;
         Vector2 newMechaPosition = mecha.position - transform.position;
 
-        if(SwapCharacter.Instance.playerActive == true)
+        if (SwapCharacter.Instance.playerActive == true)
         {
             transform.Translate(newPlayerPosition * moveSpeed * Time.deltaTime);
         }
@@ -47,12 +48,12 @@ public class EnemyAI : MonoBehaviour
 
         }
 
-        
+
     }
     public void TakeDamagePlayer()
     {
-        
-       currentHealth -= GameManager.Instance.damagePlayer;
+
+        currentHealth -= GameManager.Instance.damagePlayer;
 
         anim.SetTrigger("Damaged");
         StartCoroutine(speedWait());
@@ -69,9 +70,9 @@ public class EnemyAI : MonoBehaviour
     private IEnumerator speedWait()
     {
 
-        moveSpeed = 0;
+        moveSpeed = 1000;
         GetComponent<BoxCollider2D>().enabled = false;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds((float)0.3);
         GetComponent<BoxCollider2D>().enabled = true;
         moveSpeed = moving;
 
@@ -86,14 +87,21 @@ public class EnemyAI : MonoBehaviour
         this.enabled = false;
 
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.tag == "Player")
+        if (Time.time - lastCollisionTime > collisionCooldown)
         {
-           
-            Debug.Log("daño player");
+            Debug.Log("You hitted player");
+            GameManager.Instance.lifePlayer -= GameManager.Instance.damageEnemy;
+            lastCollisionTime = Time.time;
         }
     }
-
-
 }
+
+
+
+
+
+
+
+
