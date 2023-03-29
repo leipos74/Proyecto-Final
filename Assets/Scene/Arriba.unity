@@ -291,7 +291,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14141822, y: -0.11709368}
+  m_Offset: {x: -0.024748921, y: -0.1587615}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -302,7 +302,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7887254, y: 3.037318}
+  m_Size: {x: 2.8887022, y: 2.9539824}
   m_EdgeRadius: 0
 --- !u!212 &64159842
 SpriteRenderer:
@@ -375,7 +375,6 @@ MonoBehaviour:
   CamMecha: {fileID: 1456724848}
   playerActive: 1
   isIn: 0
-  pressE: {fileID: 0}
 --- !u!1 &72411343
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,7 +748,6 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
   m_NormalMapQuality: 1
@@ -9299,18 +9297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477690a6e78cf19448191ac8f9aa2f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  globalLight: {fileID: 1117713635}
-  cycleCurrentTime: 0
-  cycleMaxTime: 60
-  dayCycle: 0
-  sunrise: {r: 0.8867924, g: 0.7631463, b: 0.4308473, a: 1}
-  day: {r: 0.7960785, g: 0.6431373, b: 0.5529412, a: 1}
-  sunset: {r: 0.93725497, g: 0.4901961, b: 0.3529412, a: 1}
-  night: {r: 0.462542, g: 0.01668743, b: 0.7075472, a: 0}
-  midnight: {r: 0.092114635, g: 0.13814826, b: 0.2830189, a: 1}
-  mapLights:
-  - {fileID: 302570629}
-  - {fileID: 1873717790}
 --- !u!4 &490405603
 Transform:
   m_ObjectHideFlags: 0
@@ -9543,9 +9529,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: MENU
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 533762080dbe46b489d455db617b9af6, type: 2}
-  m_sharedMaterial: {fileID: 6653070035126640079, guid: 533762080dbe46b489d455db617b9af6,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10141,7 +10126,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07234967, y: 0.7027656}
+  m_Offset: {x: 0.0047083497, y: 0.62385035}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10152,7 +10137,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.607739, y: 2.2955322}
+  m_Size: {x: 1.9459473, y: 2.4533625}
   m_EdgeRadius: 0
 --- !u!114 &782137840
 MonoBehaviour:
@@ -10532,7 +10517,7 @@ RectTransform:
   m_GameObject: {fileID: 949769500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 0.39896, y: 0.39896, z: 1}
+  m_LocalScale: {x: 0.39896, y: 0.39896, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 91859474}
@@ -10540,7 +10525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27.82, y: -1.58}
+  m_AnchoredPosition: {x: 20.2, y: -13.39}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &949769502
@@ -10566,7 +10551,7 @@ MonoBehaviour:
   m_text: Press e Go down
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 533762080dbe46b489d455db617b9af6, type: 2}
-  m_sharedMaterial: {fileID: 6653070035126640079, guid: 533762080dbe46b489d455db617b9af6,
+  m_sharedMaterial: {fileID: 8773896160958555454, guid: 533762080dbe46b489d455db617b9af6,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -10653,10 +10638,10 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 0
+  m_RenderingLayerMask: 2049
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6653070035126640079, guid: 533762080dbe46b489d455db617b9af6, type: 2}
+  - {fileID: 8773896160958555454, guid: 533762080dbe46b489d455db617b9af6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12982,7 +12967,6 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
@@ -13511,9 +13495,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: HAS MUERTO
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 533762080dbe46b489d455db617b9af6, type: 2}
-  m_sharedMaterial: {fileID: 6653070035126640079, guid: 533762080dbe46b489d455db617b9af6,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -13920,7 +13903,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -15253,7 +15235,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -15611,9 +15592,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: QUIT
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 533762080dbe46b489d455db617b9af6, type: 2}
-  m_sharedMaterial: {fileID: 6653070035126640079, guid: 533762080dbe46b489d455db617b9af6,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15753,7 +15733,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06655407, y: 0.96933746}
+  m_Offset: {x: 0.045309186, y: 1.2133434}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15764,7 +15744,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8775635, y: 1.136524}
+  m_Size: {x: 0.9713172, y: 1.4310207}
   m_EdgeRadius: 0
 --- !u!114 &1837349072
 MonoBehaviour:
@@ -15835,7 +15815,6 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
   m_NormalMapQuality: 1
@@ -16598,6 +16577,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6089c2f41749cdb4499aa2f91aaab4cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &4704893395146181902 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3424943556086981668, guid: 37dea38e8e700b944a68c06d6ed165ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 7984032874633816358}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7984032874633816358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16695,6 +16680,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585030080656412998, guid: 37dea38e8e700b944a68c06d6ed165ae,
+        type: 3}
+      propertyPath: gun
+      value: 
+      objectReference: {fileID: 4704893395146181902}
     - target: {fileID: 7585030080656412998, guid: 37dea38e8e700b944a68c06d6ed165ae,
         type: 3}
       propertyPath: speed

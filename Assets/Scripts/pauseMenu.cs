@@ -45,10 +45,23 @@ public class pauseMenu : MonoBehaviour
             if (isPaused)
             {
                 Time.timeScale = 1.0f;
-                isPaused = false;
+                isPaused = false;             
                 PauseMenu.SetActive(false);
                 OptionsMenu.SetActive(false);
-                WeaponController.enabled = true;
+                if(SwapCharacter.Instance.playerActive) 
+                {
+                    CamPlayer.enabled = true;
+                    CamMecha.enabled = false;
+                    WeaponController.enabled = true;
+                }
+                if(!SwapCharacter.Instance.playerActive) 
+                {
+                    CamMecha.enabled = true;
+                    CamPlayer.enabled = false;
+                    WeaponController.enabled = false;
+                }
+               
+
 
             }
             else
@@ -99,7 +112,7 @@ public class pauseMenu : MonoBehaviour
             CamMecha.enabled = false;
             WeaponController.enabled = true;
         }
-        else if (!SwapCharacter.Instance.playerActive)
+        if (!SwapCharacter.Instance.playerActive)
         {
             if (CamPlayer != null)
             {

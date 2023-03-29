@@ -13,7 +13,6 @@ public class SwapCharacter : MonoBehaviour
 
     public bool playerActive = true;
     public bool isIn;
-    public GameObject pressE;
     public static SwapCharacter Instance;
 
    
@@ -24,17 +23,20 @@ public class SwapCharacter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        pressE.SetActive(false);
+       
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.tag == "Player" || other.tag == "mecha" ){ 
         isIn = true;
-        pressE.SetActive(true);
+        }
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        isIn = false;
-        pressE.SetActive(false);
+        if (other.tag == "Player" || other.tag == "mecha")
+        {
+            isIn = false;
+        }    
     }
 
     // Update is called once per frame
