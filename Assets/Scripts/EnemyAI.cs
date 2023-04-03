@@ -14,16 +14,13 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float moving;
     public Transform player;
     public Transform mecha;
-    public int maxhealthEnemy = 100;
-    int currentHealth;
-    private float lastCollisionTime = 0f;
-    public float collisionCooldown = 1f;
+    private float lastHitTime; // variable para almacenar el último tiempo en que el enemigo golpeó al jugador
+    public float hitDelay = 1.0f; // variable para configurar el tiempo entre ataques del enemigo
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         mecha = GameObject.FindGameObjectWithTag("mecha").transform;
-        currentHealth = maxhealthEnemy;
         moving = moveSpeed;
         anim = GetComponent<Animator>();
     }
@@ -53,13 +50,13 @@ public class EnemyAI : MonoBehaviour
     public void TakeDamagePlayer()
     {
 
-        currentHealth -= GameManager.Instance.damagePlayer;
+        GameManager.Instance.lifeEnemy -= GameManager.Instance.damagePlayer;
 
         anim.SetTrigger("Damaged");
         StartCoroutine(speedWait());
         moveSpeed = 0;
 
-        if (currentHealth <= 0)
+        if (GameManager.Instance.lifeEnemy <= 0)
         {
 
             Dead();
@@ -79,24 +76,26 @@ public class EnemyAI : MonoBehaviour
     }
     private void Dead()
     {
-
         anim.SetBool("isDead", true);
-        Destroy(this.gameObject);
-        GetComponent<Collider2D>().enabled = false;
 
-        this.enabled = false;
+        Destroy(this.gameObject);
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+
+   
+
+    private void OnCollisionStay2D(Collision2D other)
     {
-        if (Time.time - lastCollisionTime > collisionCooldown)
+        if (other.gameObject.CompareTag("Player") || (other.gameObject.CompareTag("mecha")) && Time.time > lastHitTime + hitDelay)
         {
-            Debug.Log("You hitted player");
+            Debug.Log("You hitted player stay");
             GameManager.Instance.lifePlayer -= GameManager.Instance.damageEnemy;
-            lastCollisionTime = Time.time;
+            lastHitTime = Time.time;
         }
     }
+
 }
+
 
 
 

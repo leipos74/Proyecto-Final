@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject Gun;
     public bool isMouseOnLeft;
     public Vector3 mousePos;
+    public GameObject key;
 
     [Header("Vidas")]
     public int lifePlayer;
@@ -38,7 +39,7 @@ public class GameManager : MonoBehaviour
         lifePlayer = 100;
         lifeEnemy = 50;
         damageEnemy = 10;
-        damagePlayer = 10;
+        damagePlayer = 10;  
     }
     void Update()
     {

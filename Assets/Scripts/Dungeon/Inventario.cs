@@ -6,15 +6,18 @@ public class Inventario : MonoBehaviour
 {
     public GameObject meeleWeapon;
     public GameObject meeleWeaponButton;
-    public GameObject rangeWeapon;
+    public SpriteRenderer rangeWeapon;
+    public Weapon weaponController;
     public GameObject rangeWeaponButton;
     public GameObject botonVolver;
     public GameObject panel;
     public bool pausado;
+    
     // Start is called before the first frame update
     void Start()
     {
         pausado = false;
+        weaponController.enabled = true;
         meeleWeaponButton.SetActive(false);
         rangeWeaponButton.SetActive(false);
         botonVolver.SetActive(false);
@@ -66,12 +69,14 @@ public class Inventario : MonoBehaviour
     }
     public void MeeleWeapon()
     {
-        rangeWeapon.SetActive(false);
         meeleWeapon.SetActive(true);
+        rangeWeapon.enabled = false;
+        weaponController.enabled = false;
     }
     public void RangeWeapon()
     {
         meeleWeapon.SetActive(false);
-        rangeWeapon.SetActive(true);
+        rangeWeapon.enabled = true;
+        weaponController.enabled = true;
     }
 }

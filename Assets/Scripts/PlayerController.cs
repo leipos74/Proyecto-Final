@@ -243,7 +243,6 @@ public class PlayerController : MonoBehaviour
     {
         
         anim.SetBool("isDead", true);
-        rb.gravityScale = 0.0f;
         deadScreen.SetActive(true);
         Destroy(GameManager.Instance.Player);
         GetComponent<Collider2D>().enabled = false;
