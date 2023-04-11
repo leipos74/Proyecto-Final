@@ -14,8 +14,12 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float moving;
     public Transform player;
     public Transform mecha;
-    private float lastHitTime; // variable para almacenar el último tiempo en que el enemigo golpeó al jugador
-    public float hitDelay = 1.0f; // variable para configurar el tiempo entre ataques del enemigo
+    private float lastHitTime; 
+    public float hitDelay = 1.0f;
+    public int life;
+    private int currentLife;
+    private bool isDead = false;
+    private float deadTime = 2.0f;
 
     private void Start()
     {
@@ -23,6 +27,7 @@ public class EnemyAI : MonoBehaviour
         mecha = GameObject.FindGameObjectWithTag("mecha").transform;
         moving = moveSpeed;
         anim = GetComponent<Animator>();
+        currentLife = life;
     }
     private void Awake()
     {
@@ -35,7 +40,7 @@ public class EnemyAI : MonoBehaviour
         Vector2 newPlayerPosition = player.position - transform.position;
         Vector2 newMechaPosition = mecha.position - transform.position;
 
-        if (SwapCharacter.Instance.playerActive == true)
+        if (SwapCharacter.Instance.playerActive == true && isDead == false)
         {
             transform.Translate(newPlayerPosition * moveSpeed * Time.deltaTime);
         }
@@ -45,18 +50,21 @@ public class EnemyAI : MonoBehaviour
 
         }
 
+          
+
+
 
     }
     public void TakeDamagePlayer()
     {
 
-        GameManager.Instance.lifeEnemy -= GameManager.Instance.damagePlayer;
+        currentLife -= GameManager.Instance.damagePlayer;
 
         anim.SetTrigger("Damaged");
         StartCoroutine(speedWait());
         moveSpeed = 0;
 
-        if (GameManager.Instance.lifeEnemy <= 0)
+        if (currentLife <= 0)
         {
 
             Dead();
@@ -76,9 +84,11 @@ public class EnemyAI : MonoBehaviour
     }
     private void Dead()
     {
+   
         anim.SetBool("isDead", true);
 
         Destroy(this.gameObject);
+
 
     }
 

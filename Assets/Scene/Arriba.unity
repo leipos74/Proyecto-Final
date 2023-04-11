@@ -157,8 +157,40 @@ Transform:
   - {fileID: 510937437}
   - {fileID: 1463244427}
   - {fileID: 1964596898}
+  - {fileID: 6274960}
   m_Father: {fileID: 2088942943}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6274959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6274960}
+  m_Layer: 0
+  m_Name: enemyFalso
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6274960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6274959}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.87, y: -1.35, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1073990}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &24950628
 GameObject:
@@ -788,7 +820,6 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
   m_NormalMapQuality: 1
@@ -10417,16 +10448,16 @@ RectTransform:
   m_GameObject: {fileID: 915000481}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.3600004, y: 3.3600004, z: 3.3600004}
+  m_LocalScale: {x: 1.9641217, y: 1.9641217, z: 1.9641217}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 267028764}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3, y: -213}
-  m_SizeDelta: {x: 354.5621, y: 62.2831}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -546, y: 408}
+  m_SizeDelta: {x: 354.5621, y: 62.283096}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &915000483
 MonoBehaviour:
@@ -10512,7 +10543,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: -1.549346, z: -0.41613007, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -13145,7 +13176,6 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
   m_NormalMapQuality: 2
@@ -14083,7 +14113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -15416,7 +15445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -15692,16 +15720,16 @@ RectTransform:
   m_GameObject: {fileID: 1756835500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.1115344, y: 2.4018703, z: 2.1115344}
+  m_LocalScale: {x: 1.7911954, y: 2.2957315, z: 2.0182257}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 267028764}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 190, y: -1}
-  m_SizeDelta: {x: 354.5621, y: 62.2831}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: -575, y: 277.00006}
+  m_SizeDelta: {x: 354.5621, y: 62.283096}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1763670623
 GameObject:
@@ -16134,7 +16162,6 @@ MonoBehaviour:
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
-  m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 1
   m_NormalMapDistance: 3
   m_NormalMapQuality: 1
@@ -16715,17 +16742,17 @@ MonoBehaviour:
     noOfEnemies: 10
     typeOfEnemies:
     - {fileID: 5687523962916581043, guid: a0c2433991977754cb8704394467ef00, type: 3}
-    spawnInterval: 1
+    spawnInterval: 0
   - waveName: Wave2
     noOfEnemies: 10
     typeOfEnemies:
     - {fileID: 5687523962916581043, guid: a0c2433991977754cb8704394467ef00, type: 3}
-    spawnInterval: 1
+    spawnInterval: 0.5
   - waveName: Wave3
     noOfEnemies: 10
     typeOfEnemies:
     - {fileID: 5687523962916581043, guid: a0c2433991977754cb8704394467ef00, type: 3}
-    spawnInterval: 1
+    spawnInterval: 0.5
   spawnPoints:
   - {fileID: 1287202926}
   - {fileID: 1437833885}
