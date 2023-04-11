@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 76
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -279,27 +279,6 @@ TextureImporter:
       bones: []
       spriteID: 0c6bb92a66551c54a8f2a5d51bc63237
       internalID: 915003685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: props and items x3_15
-      rect:
-        serializedVersion: 2
-        x: 2208
-        y: 2016
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9d277e38139f5a4690064eeb350ec71
-      internalID: -1729351932
       vertices: []
       indices: 
       edges: []
@@ -772,7 +751,7 @@ TextureImporter:
         serializedVersion: 2
         x: 288
         y: 1632
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -788,33 +767,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_43
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 1632
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f0397006aeac074a9d1adff6ccba344
-      internalID: 1518759400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_44
       rect:
         serializedVersion: 2
         x: 480
         y: 1632
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -830,33 +788,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_45
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 1632
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2731a2ecbabcafd46b4e8607b8888974
-      internalID: -583476972
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_46
       rect:
         serializedVersion: 2
         x: 672
         y: 1632
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -867,27 +804,6 @@ TextureImporter:
       bones: []
       spriteID: 80b32d591a5f5e24198fb43713e5fe01
       internalID: -1571780891
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: props and items x3_47
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 1632
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 921c0a6450c38644493754c0c592eb8c
-      internalID: 1352897192
       vertices: []
       indices: 
       edges: []
@@ -1612,7 +1528,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 864
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1628,33 +1544,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_107
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 864
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0493f7b88577b674e9ee6571123f5bb3
-      internalID: -1483420593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_109
       rect:
         serializedVersion: 2
         x: 288
         y: 864
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1670,33 +1565,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_110
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 864
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8963351a7707cc04f87912679d688a73
-      internalID: 1624240325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_111
       rect:
         serializedVersion: 2
         x: 480
         y: 864
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1712,33 +1586,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_112
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 864
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc8bfc134c589dc4a9e506fb431bfecb
-      internalID: -80587079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_113
       rect:
         serializedVersion: 2
         x: 672
         y: 864
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1754,33 +1607,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_114
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 864
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5ffa9d2d82d8a1489fa6340932d63ef
-      internalID: -1615369101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_117
       rect:
         serializedVersion: 2
         x: 0
         y: 768
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1796,33 +1628,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_118
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 768
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48df875ae2bfb6f4cad411f582a344fb
-      internalID: -1812311474
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_128
       rect:
         serializedVersion: 2
         x: 0
         y: 672
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1838,33 +1649,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_129
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 672
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85e27a118bcb4b24799b6801589aa1c3
-      internalID: -707333778
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_130
       rect:
         serializedVersion: 2
         x: 192
         y: 672
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1880,33 +1670,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_131
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 672
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c1ef8c545f9eaa4ebcd3173366c5f51
-      internalID: 1989789632
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_158
       rect:
         serializedVersion: 2
         x: 0
         y: 480
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1922,33 +1691,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_159
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 480
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5385e38519aa0e545ad370fc2d3a94fb
-      internalID: -868856685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_160
       rect:
         serializedVersion: 2
         x: 192
         y: 480
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1964,33 +1712,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_161
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 480
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f73a80ac0896157428439a6596cd11bf
-      internalID: -119972296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_162
       rect:
         serializedVersion: 2
         x: 384
         y: 480
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2006,34 +1733,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_163
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 480
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 727b6be3c19c90a4ab6d3ae0c887d453
-      internalID: -1136717823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_164
       rect:
         serializedVersion: 2
         x: 576
-        y: 480
-        width: 96
-        height: 96
+        y: 552
+        width: 192
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2048,33 +1754,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_165
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 480
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 90119d00322a5ee409650aab83d05799
-      internalID: -2070162226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_166
       rect:
         serializedVersion: 2
         x: 768
         y: 480
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2090,33 +1775,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_167
-      rect:
-        serializedVersion: 2
-        x: 864
-        y: 480
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4de15b8d652fed141924af52723be82c
-      internalID: 1983902232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_168
       rect:
         serializedVersion: 2
         x: 960
         y: 480
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2132,33 +1796,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_169
-      rect:
-        serializedVersion: 2
-        x: 1056
-        y: 480
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f114f98d3e888504b8a6a1daff679c53
-      internalID: 1632408064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_170
       rect:
         serializedVersion: 2
         x: 1152
         y: 480
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2174,33 +1817,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_171
-      rect:
-        serializedVersion: 2
-        x: 1248
-        y: 480
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1c6813a97e0dc649bdc253a9107259e
-      internalID: -229747877
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_172
       rect:
         serializedVersion: 2
         x: 1344
         y: 480
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2216,33 +1838,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_173
-      rect:
-        serializedVersion: 2
-        x: 1440
-        y: 480
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad26481e28d8fbc40bad01d5aaf26714
-      internalID: -1881475382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_174
       rect:
         serializedVersion: 2
         x: 1536
         y: 480
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2258,33 +1859,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_175
-      rect:
-        serializedVersion: 2
-        x: 1632
-        y: 480
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5dd00370263f2774c865ef79542084a6
-      internalID: 899233562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_176
       rect:
         serializedVersion: 2
         x: 1728
         y: 480
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2300,33 +1880,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_177
-      rect:
-        serializedVersion: 2
-        x: 1824
-        y: 480
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 381db5c9822a04a448e1805bbe24dae2
-      internalID: -1541436048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_178
       rect:
         serializedVersion: 2
         x: 1920
         y: 480
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2342,33 +1901,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: props and items x3_179
-      rect:
-        serializedVersion: 2
-        x: 2016
-        y: 480
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab3212e29f0d9fd478329cfa88dd0c94
-      internalID: -474692384
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: props and items x3_180
       rect:
         serializedVersion: 2
         x: 2112
         y: 480
-        width: 96
+        width: 192
         height: 96
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2379,27 +1917,6 @@ TextureImporter:
       bones: []
       spriteID: fc4bcb5161dcb7949863146b0e5f57ce
       internalID: -706289960
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: props and items x3_181
-      rect:
-        serializedVersion: 2
-        x: 2208
-        y: 480
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a58eb003313b434390542b550880c53
-      internalID: 1850772064
       vertices: []
       indices: 
       edges: []
@@ -2815,8 +2332,8 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       props and items x3_54: -841620906
-      props and items x3_6: 1987770501
-      props and items x3_48: -404132253
+      props and items x3_194: 605298775
+      props and items x3_204: -734084400
       props and items x3_5: 1046430348
       props and items x3_55: 824579415
       props and items x3_29: -1675684114
@@ -3057,8 +2574,8 @@ TextureImporter:
       props and items x3_187: -871451310
       props and items x3_160: -1889376059
       props and items x3_121: 1295180548
-      props and items x3_194: 605298775
-      props and items x3_204: -734084400
+      props and items x3_6: 1987770501
+      props and items x3_48: -404132253
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
