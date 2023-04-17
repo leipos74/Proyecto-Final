@@ -480,7 +480,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 643304333
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6,
     type: 3}
@@ -518,10 +518,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 95796033}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c953c0eae34794d9dbdbc37bfaebcc, type: 3}
+  m_Script: {fileID: 11500000, guid: f199198781c509f47bc25b92532e3713, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: Abajo
+  Scene: Planta1
 --- !u!1 &102046246
 GameObject:
   m_ObjectHideFlags: 0
@@ -776,7 +776,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -2523,7 +2522,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -9444,6 +9442,7 @@ MonoBehaviour:
   meeleWeapon: {fileID: 0}
   meeleWeaponButton: {fileID: 1413013496}
   rangeWeapon: {fileID: 925144814}
+  weaponController: {fileID: 0}
   rangeWeaponButton: {fileID: 1517232746}
   botonVolver: {fileID: 1004927073}
   panel: {fileID: 1017638765}
@@ -10372,7 +10371,7 @@ MonoBehaviour:
   m_text: Planta 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 533762080dbe46b489d455db617b9af6, type: 2}
-  m_sharedMaterial: {fileID: 6653070035126640079, guid: 533762080dbe46b489d455db617b9af6,
+  m_sharedMaterial: {fileID: 8773896160958555454, guid: 533762080dbe46b489d455db617b9af6,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -10462,7 +10461,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6653070035126640079, guid: 533762080dbe46b489d455db617b9af6, type: 2}
+  - {fileID: 8773896160958555454, guid: 533762080dbe46b489d455db617b9af6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12703,7 +12702,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 643304333
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: -1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0.00003182888, y: 0, z: 0}
@@ -16292,6 +16291,7 @@ MonoBehaviour:
   Gun: {fileID: 925144814}
   isMouseOnLeft: 0
   mousePos: {x: 0, y: 0, z: 0}
+  key: {fileID: 0}
   lifePlayer: 0
   lifeEnemy: 0
   damageEnemy: 0

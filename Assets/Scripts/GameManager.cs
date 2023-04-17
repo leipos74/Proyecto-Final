@@ -12,7 +12,6 @@ public class GameManager : MonoBehaviour
     public GameObject Gun;
     public bool isMouseOnLeft;
     public Vector3 mousePos;
-    public GameObject key;
 
     [Header("Vidas")]
     public int lifePlayer;

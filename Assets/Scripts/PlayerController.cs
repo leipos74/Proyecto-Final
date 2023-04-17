@@ -250,12 +250,6 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "mecha")
-        {
-            Debug.Log("hola");
-        }
-    }
+    
 
 }

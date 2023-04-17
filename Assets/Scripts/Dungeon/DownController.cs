@@ -18,17 +18,11 @@ public class DownController : MonoBehaviour
         
     }
 
-    public void OnTriggerStay2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && KeyController.Instance.keyPicked == true)
         {
-            Debug.Log("Pulsa e para entrar");
-            if (Input.GetKeyDown(KeyCode.E) && KeyController.Instance.keyPicked == true)
-            {
-                Debug.Log("Ahora puedes entrar");
-                SceneManager.LoadScene(Scene);
-            }
-            
+            SceneManager.LoadScene(Scene);
         }
     }
 }

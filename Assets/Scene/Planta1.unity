@@ -2306,7 +2306,7 @@ Camera:
   far clip plane: 1000
   field of view: 65.5
   orthographic: 1
-  orthographic size: 6.2413383
+  orthographic size: 5.3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2752,7 +2752,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 838490030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.96, y: 7.33, z: 0}
+  m_LocalPosition: {x: -8.11, y: -0.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9301,7 +9301,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 895387470}
-  - component: {fileID: 895387468}
+  - component: {fileID: 895387471}
   - component: {fileID: 895387467}
   - component: {fileID: 895387466}
   m_Layer: 0
@@ -9390,19 +9390,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &895387468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895387465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f199198781c509f47bc25b92532e3713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Scene: Planta2
 --- !u!4 &895387470
 Transform:
   m_ObjectHideFlags: 0
@@ -9418,6 +9405,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895387471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895387465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37c953c0eae34794d9dbdbc37bfaebcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene: Planta2
 --- !u!1 &916303021
 GameObject:
   m_ObjectHideFlags: 0

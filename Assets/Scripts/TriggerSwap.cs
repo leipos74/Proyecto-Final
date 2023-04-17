@@ -15,9 +15,7 @@ public class TriggerSwap : MonoBehaviour
     {
         if (other.tag == "Player" )
         {
-           
-            Debug.Log("dale a la e");
-            SceneManager.LoadScene("Abajo");
+            SceneManager.LoadScene("Planta1");
             Debug.Log("entrasete puerta");
         }
     }
