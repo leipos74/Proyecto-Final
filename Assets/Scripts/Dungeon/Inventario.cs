@@ -9,64 +9,54 @@ public class Inventario : MonoBehaviour
     public SpriteRenderer rangeWeapon;
     public Weapon weaponController;
     public GameObject rangeWeaponButton;
-    public GameObject botonVolver;
-    public GameObject panel;
-    public bool pausado;
-    
+    bool meelePicked = false;
+    bool rangePicked = false;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        pausado = false;
-        weaponController.enabled = true;
+        rangeWeapon.enabled = false;
+        meeleWeapon.SetActive(false);
+        weaponController.enabled = false;
+
         meeleWeaponButton.SetActive(false);
         rangeWeaponButton.SetActive(false);
-        botonVolver.SetActive(false);
-        panel.SetActive(false);
+
         
+
     }
 
     // Update is called once per frame
     void Update()
-    {
-
-        if (Input.GetKeyDown(KeyCode.Tab))
+    {            
+        if (PickRangeWeapon.Instance.RangePicked && !rangePicked)
         {
-            if (!pausado)
-            {             
-                if (PickRangeWeapon.Instance.RangePicked)
-                {
-                    rangeWeaponButton.SetActive(true);
-                    Debug.Log("ArmaRange");
-
-                }
-                if (PickItem.Instance.MeelePicked)
-                {
-                    meeleWeaponButton.SetActive(true);
-                    Debug.Log("ArmaMeele");
-
-                }
-                Time.timeScale = 0.0f;
-                panel.SetActive(true);
-                botonVolver.SetActive(true);
-                pausado = true;
-
-            }
-            else
-            {
-                Reset();
-            }
+            rangeWeaponButton.SetActive(true);
+            RangeWeapon();
+            PickRangeWeapon.Instance.RangePicked = true;
+            rangePicked = true;
+        }
+        if (PickItem.Instance.MeelePicked && !meelePicked)
+        {
+            meeleWeaponButton.SetActive(true);
+            MeeleWeapon();
+            PickItem.Instance.MeelePicked = true;
+            meelePicked = true;
+        }
+        if (Input.GetKey(KeyCode.Alpha1) && rangePicked == true)
+        {
+            RangeWeapon();
+            Debug.Log("le das al 1");
+        }
+        else if (Input.GetKey(KeyCode.Alpha2) && meelePicked == true)
+        {
+            MeeleWeapon();
+            Debug.Log("le das al 2");
         }
     }
 
-    public void Reset()
-    {
-        pausado = false;
-        meeleWeaponButton.SetActive(false);
-        rangeWeaponButton.SetActive(false);
-        botonVolver.SetActive(false);
-        panel.SetActive(false);
-        Time.timeScale = 1.0f;
-    }
+    
     public void MeeleWeapon()
     {
         meeleWeapon.SetActive(true);
