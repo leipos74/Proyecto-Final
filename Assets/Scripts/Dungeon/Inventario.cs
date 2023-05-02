@@ -23,14 +23,18 @@ public class Inventario : MonoBehaviour
         meeleWeaponButton.SetActive(false);
         rangeWeaponButton.SetActive(false);
 
-        
+        if (GameManager.Instance.GunPicked)
+        {
+            rangeWeaponButton.SetActive(true);
+        }
 
     }
 
     // Update is called once per frame
     void Update()
-    {            
-        if (PickRangeWeapon.Instance.RangePicked && !rangePicked)
+    {
+        
+        if (GameManager.Instance.GunPicked && !rangePicked)
         {
             rangeWeaponButton.SetActive(true);
             RangeWeapon();

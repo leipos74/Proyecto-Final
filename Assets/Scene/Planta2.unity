@@ -155,7 +155,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 1930281855}
   salida: {fileID: 615966083}
-  position: {x: 0, y: 0}
 --- !u!61 &31778145
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1198,7 +1197,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 493300179}
   salida: {fileID: 1819258264}
-  position: {x: 0, y: 0}
 --- !u!61 &476250230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1283,6 +1281,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 3424943556086981674, guid: 37dea38e8e700b944a68c06d6ed165ae,
+        type: 3}
+      propertyPath: fireRate
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5317785571454152295, guid: 37dea38e8e700b944a68c06d6ed165ae,
         type: 3}
       propertyPath: m_Name
@@ -1402,7 +1405,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 1462413241}
   salida: {fileID: 1690456461}
-  position: {x: 0, y: 0}
 --- !u!4 &501047396
 Transform:
   m_ObjectHideFlags: 0
@@ -1476,7 +1478,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 1277725261}
   salida: {fileID: 1517745048}
-  position: {x: 0, y: 0}
 --- !u!61 &502056492
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2701,7 +2702,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 158907307}
   salida: {fileID: 89999328}
-  position: {x: 0, y: 0}
 --- !u!61 &847566678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11472,7 +11472,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 1462413241}
   salida: {fileID: 253057586}
-  position: {x: 0, y: 0}
 --- !u!61 &951081643
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17018,7 +17017,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 62343171}
   salida: {fileID: 1202071604}
-  position: {x: 0, y: 0}
 --- !u!61 &1985587329
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17591,12 +17589,14 @@ MonoBehaviour:
   Cam: {fileID: 711245719}
   Mecha: {fileID: 0}
   Gun: {fileID: 925144814}
+  floorGun: {fileID: 0}
   isMouseOnLeft: 0
   mousePos: {x: 0, y: 0, z: 0}
   lifePlayer: 0
   lifeEnemy: 0
   damageEnemy: 0
   damagePlayer: 0
+  GunPicked: 0
 --- !u!4 &2047819982
 Transform:
   m_ObjectHideFlags: 0

@@ -15,6 +15,10 @@ public class PickRangeWeapon : MonoBehaviour
     void Start()
     {
         RangePicked = false;
+        if (GameManager.Instance.GunPicked)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     // Update is called once per frame

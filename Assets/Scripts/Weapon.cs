@@ -10,11 +10,22 @@ public class Weapon : MonoBehaviour
 
     private float nextFireTime;
     public Rigidbody2D rb;
-    
+
+
+    private void Start()
+    {
+        this.gameObject.SetActive(false);
+        if (GameManager.Instance.GunPicked)
+        {
+            this.gameObject.SetActive(true);
+        }
+    }
+
+
     private void Update()
     {
 
-     Vector3 difference = GameManager.Instance.mousePos  - transform.position;
+        Vector3 difference = GameManager.Instance.mousePos - transform.position;
 
         difference.Normalize();
 
@@ -45,22 +56,19 @@ public class Weapon : MonoBehaviour
             }
 
         }
-
-          Shooting();
-        
+        if (Input.GetButton("Fire1") && nextFireTime < Time.time)
+        {
+            Shooting();
+        }
  }
 
     void Shooting()
     {
 
-        if (Input.GetButton("Fire1") && nextFireTime < Time.time)
-        {
-            Debug.Log("Has disparado");
-            Instantiate(bullet, transform.position, transform.rotation);
-            rb.AddForce(-transform.eulerAngles * recoil); 
-            nextFireTime = fireRate + Time.time;
-          
-        }
+        Debug.Log("Has disparado");
+        Instantiate(bullet, transform.position, transform.rotation);
+        rb.AddForce(-transform.eulerAngles * recoil); 
+        nextFireTime = fireRate + Time.time;
 
     }
 }

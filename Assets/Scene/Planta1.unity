@@ -155,7 +155,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 1930281855}
   salida: {fileID: 615966083}
-  position: {x: 0, y: 0}
 --- !u!61 &31778145
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -813,7 +812,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &214469036
 GameObject:
@@ -1425,7 +1424,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 493300179}
   salida: {fileID: 1819258264}
-  position: {x: 0, y: 0}
 --- !u!61 &476250230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1568,6 +1566,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 3424943556086981674, guid: 37dea38e8e700b944a68c06d6ed165ae,
+        type: 3}
+      propertyPath: recoil
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424943556086981674, guid: 37dea38e8e700b944a68c06d6ed165ae,
+        type: 3}
+      propertyPath: fireRate
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5317785571454152295, guid: 37dea38e8e700b944a68c06d6ed165ae,
         type: 3}
       propertyPath: m_Name
@@ -1576,7 +1584,7 @@ PrefabInstance:
     - target: {fileID: 5429016829317269393, guid: 37dea38e8e700b944a68c06d6ed165ae,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5429016829317269393, guid: 37dea38e8e700b944a68c06d6ed165ae,
         type: 3}
@@ -1718,7 +1726,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 1462413241}
   salida: {fileID: 1690456461}
-  position: {x: 0, y: 0}
 --- !u!4 &501047396
 Transform:
   m_ObjectHideFlags: 0
@@ -2335,7 +2342,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &711245721
 MonoBehaviour:
@@ -2889,7 +2896,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 158907307}
   salida: {fileID: 89999328}
-  position: {x: 0, y: 0}
 --- !u!61 &847566678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9518,7 +9524,6 @@ GameObject:
   - component: {fileID: 916303024}
   - component: {fileID: 916303023}
   - component: {fileID: 916303030}
-  - component: {fileID: 916303032}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -9615,7 +9620,7 @@ RectTransform:
   - {fileID: 1444905423}
   - {fileID: 225894703}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -9655,18 +9660,6 @@ MonoBehaviour:
   rangeWeapon: {fileID: 925144817}
   weaponController: {fileID: 925144816}
   rangeWeaponButton: {fileID: 1517232746}
---- !u!114 &916303032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 916303021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 432f201017a4ee04ea324e9e7ecf3b34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &925144814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3424943556086981671, guid: 37dea38e8e700b944a68c06d6ed165ae,
@@ -9913,7 +9906,7 @@ Transform:
   - {fileID: 1761026518}
   - {fileID: 1832070064}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &951396769
 GameObject:
@@ -10065,7 +10058,7 @@ Transform:
   m_Children:
   - {fileID: 887480365}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1051640975
 GameObject:
@@ -15277,7 +15270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1413013497
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15811,7 +15804,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1517232747
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16252,7 +16245,7 @@ Transform:
   - {fileID: 158907308}
   - {fileID: 1462413242}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1743599971
 GameObject:
@@ -17004,7 +16997,7 @@ Transform:
   m_Children:
   - {fileID: 1955373432}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1819258264
 GameObject:
@@ -20443,7 +20436,7 @@ Transform:
   - {fileID: 501047396}
   - {fileID: 1690456464}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1980034595
 GameObject:
@@ -20568,7 +20561,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 62343171}
   salida: {fileID: 1202071604}
-  position: {x: 0, y: 0}
 --- !u!61 &1985587329
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21254,15 +21246,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1445236957}
-  Cam: {fileID: 711245719}
+  Cam: {fileID: 0}
   Mecha: {fileID: 0}
   Gun: {fileID: 925144814}
+  floorGun: {fileID: 1429566274}
   isMouseOnLeft: 0
   mousePos: {x: 0, y: 0, z: 0}
   lifePlayer: 0
   lifeEnemy: 0
   damageEnemy: 0
   damagePlayer: 0
+  GunPicked: 0
 --- !u!4 &2047819982
 Transform:
   m_ObjectHideFlags: 0
@@ -21276,7 +21270,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2049362192
 GameObject:
