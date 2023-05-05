@@ -6,7 +6,6 @@ public class DoorController : MonoBehaviour
 {
     public GameObject camPos;
     public GameObject salida;
-    public Vector2 position;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,9 +25,12 @@ public class DoorController : MonoBehaviour
             GameManager.Instance.Cam.transform.position = camPos.transform.position;
         }
     }
-    public void OnTriggerExit2D(Collider2D collision)
+    public void OnTriggerExit2D(Collider2D other)
     {
-        this.gameObject.SetActive(false);
-        salida.SetActive(true);
+        if (other.CompareTag("Player"))
+        {
+            this.gameObject.SetActive(false);
+            salida.SetActive(true);
+        }
     }
 }
