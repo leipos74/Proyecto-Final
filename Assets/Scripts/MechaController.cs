@@ -46,7 +46,16 @@ public class MechaController : MonoBehaviour
         {
             anim.SetBool("Run", false);
         }
-        
+        isMoving = input.magnitude > 0;
+        if (GameManager.Instance.isMouseOnLeft)
+        {
+            transform.rotation = Quaternion.Euler(0f, 180f, 0f);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        }
+
     }
 
     private void FixedUpdate()
@@ -63,20 +72,7 @@ public class MechaController : MonoBehaviour
         {
             isMoving = false;
         }
-
-        if (input.x > 0)
-        {
-
-            transform.localRotation = Quaternion.Euler(0, 0, 0);
-
-        }
-        if (input.x < 0)
-        {
-
-            transform.localRotation = Quaternion.Euler(0, 180, 0);
-
-        }
-        Shooting();
+       
         ShootingRocket();
 
     }
@@ -87,14 +83,6 @@ public class MechaController : MonoBehaviour
         if (other.gameObject.tag == "mecha")
         {
             Debug.Log("hola");
-        }
-    }
-    void Shooting()
-    {
-        if (Input.GetButton("Fire1") && nextFireTime < Time.time)
-        {
-            Instantiate(bullet, transform.position, transform.rotation);
-            nextFireTime = fireRate + Time.time;
         }
     }
     void ShootingRocket()
