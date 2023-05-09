@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public int damagePlayer;
 
     public bool GunPicked;
+    public bool KeyPicked;
 
 
     private void Awake()
@@ -54,8 +55,14 @@ public class GameManager : MonoBehaviour
         if (PickRangeWeapon.Instance.RangePicked)
         {
             GunPicked = true;
-            Gun.SetActive(true); 
+            if (Gun != null)
+                Gun.SetActive(true); 
 
+        }
+        if (KeyController.Instance.keyPicked)
+        {
+            KeyPicked = true;
+            
         }
 
         float mousePosX = Input.mousePosition.x / Screen.width;
@@ -69,6 +76,12 @@ public class GameManager : MonoBehaviour
     {
         FindCamera();
         Debug.Log("ENTRAAAA");
+        Player = GameObject.Find("Player");
+        Gun = GameObject.Find("Gun");
+        if (SceneManager.GetActiveScene().name == "Arriba")
+        {
+            Mecha = GameObject.Find("Mecha");
+        }
     }
 
     private void FindCamera()

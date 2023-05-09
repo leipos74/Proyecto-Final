@@ -448,7 +448,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &95796038
 MonoBehaviour:
@@ -2359,7 +2359,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &753830864
 GameObject:
@@ -2655,7 +2655,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &838490034
 MonoBehaviour:
@@ -11026,7 +11026,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &895387471
 MonoBehaviour:
@@ -11192,12 +11192,6 @@ MonoBehaviour:
   rangeWeapon: {fileID: 925144817}
   weaponController: {fileID: 925144816}
   rangeWeaponButton: {fileID: 1517232746}
---- !u!1 &925144814 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3424943556086981671, guid: 37dea38e8e700b944a68c06d6ed165ae,
-    type: 3}
-  m_PrefabInstance: {fileID: 499596710}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &925144815 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3424943556086981668, guid: 37dea38e8e700b944a68c06d6ed165ae,
@@ -11210,7 +11204,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 499596710}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 925144814}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6089c2f41749cdb4499aa2f91aaab4cb, type: 3}
@@ -11777,7 +11771,7 @@ Transform:
   - {fileID: 782502748}
   - {fileID: 769452089}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1193317474
 GameObject:
@@ -12339,12 +12333,6 @@ RectTransform:
   m_AnchoredPosition: {x: 959.9999, y: 452.04263}
   m_SizeDelta: {x: 1219, y: 574}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1445236957 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5317785571454152295, guid: 37dea38e8e700b944a68c06d6ed165ae,
-    type: 3}
-  m_PrefabInstance: {fileID: 499596710}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1462413241
 GameObject:
   m_ObjectHideFlags: 0
@@ -17556,62 +17544,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040658286}
   m_CullTransparentMesh: 1
---- !u!1 &2047819980
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2047819982}
-  - component: {fileID: 2047819981}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2047819981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047819980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cf92372212fbda4b818c7a81177c0d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 1445236957}
-  Cam: {fileID: 711245719}
-  Mecha: {fileID: 0}
-  Gun: {fileID: 925144814}
-  floorGun: {fileID: 0}
-  isMouseOnLeft: 0
-  mousePos: {x: 0, y: 0, z: 0}
-  lifePlayer: 0
-  lifeEnemy: 0
-  damageEnemy: 0
-  damagePlayer: 0
-  GunPicked: 0
---- !u!4 &2047819982
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047819980}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.69051, y: 0.6409227, z: 11.855357}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2049362192
 GameObject:
   m_ObjectHideFlags: 0

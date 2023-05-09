@@ -15,7 +15,7 @@ public class EnemyAI : MonoBehaviour
     public Transform player;
     public Transform mecha;
     private float lastHitTime; 
-    public float hitDelay = 1.0f;
+    public float hitDelay = 5.0f;
     public int life;
     private int currentLife;
     private bool isDead = false;
@@ -84,7 +84,7 @@ public class EnemyAI : MonoBehaviour
     }
     private void Dead()
     {
-   
+    
         anim.SetBool("isDead", true);
 
         Destroy(this.gameObject);

@@ -78,13 +78,7 @@ public class MechaController : MonoBehaviour
     }
 
   
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.gameObject.tag == "mecha")
-        {
-            Debug.Log("hola");
-        }
-    }
+ 
     void ShootingRocket()
     {
         if (Input.GetKey(KeyCode.F) && nextFireTime < Time.time)

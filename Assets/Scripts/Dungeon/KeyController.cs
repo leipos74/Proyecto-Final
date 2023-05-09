@@ -15,6 +15,12 @@ public class KeyController : MonoBehaviour
     void Start()
     {
         keyPicked = false;
+        if (GameManager.Instance.KeyPicked)
+        {
+            keyPicked = true;
+            Destroy(gameObject);
+
+        }
     }
 
     // Update is called once per frame

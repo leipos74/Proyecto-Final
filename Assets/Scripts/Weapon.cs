@@ -7,6 +7,8 @@ public class Weapon : MonoBehaviour
     [SerializeField] GameObject bullet;
     [SerializeField] float fireRate;
     public float recoil;
+    public bool isMouseOnLeft;
+    public Vector3 mousePos;
 
     private float nextFireTime;
     public Rigidbody2D rb;
@@ -56,11 +58,14 @@ public class Weapon : MonoBehaviour
             }
 
         }
+
+        
+
         if (Input.GetButton("Fire1") && nextFireTime < Time.time)
         {
             Shooting();
         }
- }
+    }
 
     void Shooting()
     {
